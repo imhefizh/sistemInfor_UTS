@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopin - Beauty Store</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS -->
+    <title>Ayam Geprek UNILA | Halaman Utama</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="top-bar">
-            <p>Welcome back, Olivia</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <button type="submit">🔍</button>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="Layer 1.png" alt="Ayam Geprek">
             </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Promosi</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Promo Section -->
-    <section class="promo-banner">
-        <div class="promo">
-            <img src="promo-image.png" alt="Promo Product">
-            <div class="promo-text">
-                <h2>Retinol Youth Renewal Night Cream</h2>
-                <p>20% OFF | BUY NOW</p>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="https://i2.wp.com/resepkoki.id/wp-content/uploads/2017/11/Resep-Ayam-geprek-jogja.jpg?fit=1920%2C1792&ssl=1">
+    </section>
+
+    <!-- Description -->
+    <section class="description">
+        <div class="container">
+            <p>
+                Kami menyediakan Ayam Geprek dengan bahan-bahan segar dan saus khas yang dapat disesuaikan dengan tingkat kepedasan favorit Anda. Nikmati sajian pedas dari dapur kami ke meja makan Anda.
+            </p>
         </div>
     </section>
 
-    <!-- Categories -->
-    <section class="categories">
-        <h3>Categories</h3>
-        <div class="category-list">
-            <button>Fragrance</button>
-            <button>Makeup</button>
-            <button>Hair</button>
-            <button>Skincare</button>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="https://pict.sindonews.net/dyn/732/pena/news/2021/01/20/185/307384/resep-ayam-geprek-crispy-dan-pedas-bikin-makan-berselera-mwy.jpg" alt="Gambar 1">
+            <img src="https://2.bp.blogspot.com/-SAggp38ch1A/XMg8X2srXNI/AAAAAAAAEuw/aZLXDNPHHv4I0SjLUTbQbm5d6A9QVndngCLcBGAs/s1600/materials%2BMake%2BChicken%2BGeprek%2BSambal%2BSetan%2Boriginal%2Bindonesia.jpg" alt="Gambar 2">
+            <img src="https://thumbs.dreamstime.com/b/ayam-geprek-most-popular-food-indonesia-made-chicken-crispy-served-sambal-250237584.jpg" alt="">
+            <img src="https://png.pngtree.com/png-clipart/20230212/ourlarge/pngtree-geprek-chicken-with-fresh-vegetables-and-spicy-chili-sauce-png-image_6594194.png" alt="Gambar 3">
+            <img src="https://cdn.medcom.id/images/library/images/Showbiz/ayam%20geprek.jpg" alt="Gambar 4">
+            <img src="https://magfood-amazy.com/wp-content/uploads/2017/12/ayam-geprek.jpg" alt="Gambar 5">
         </div>
-    </section>
 
-    <!-- New Arrivals -->
-    <section class="new-arrivals">
-        <h3>New Arrivals</h3>
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="vichy-product.png" alt="Vichy Aqualia Thermal">
-                <p>Vichy Aqualia Thermal</p>
-                <span>$25.00 USD</span>
-            </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094</button>
+        <button class="next" onclick="moveSlide(1)">&#10095</button>
+    </div>
 
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="ordinary-product.png" alt="Glycolic Acid 7%">
-                <p>The Ordinary Glycolic Acid 7%</p>
-                <span>$14.50 USD</span>
+    <!-- Footer (Pilihan Bahasa) -->
+    <footer>
+        <div class="language-select">
+            <select>
+                <option value="id">Indonesia</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
