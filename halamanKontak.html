@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="Layer 1.png" alt="Ayam Geprek Logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menuMakanan.html">Menu</a></li>
+                <li><a href="promosi.html">Promosi</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="halamanKontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Kontak Kami</h1>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Hubungi Kami</h2>
+            <p>Alamat: Jurusan Teknik Elektro, Program Studi Teknik Informatika</p>
+            <p>Email: <a href="mailto:kelompok3@so.com">kelompok3@so.com</a></p>
+            <p>Telepon: <a href="tel:+6281234567890">+62 878 9896 5708</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Kirim Pesan</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ayam Geprek UNILA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

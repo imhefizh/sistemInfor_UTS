@@ -1,4 +1,4 @@
-/* Resetting default styles */
+/* Gaya Desktop */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +15,9 @@ body {
 
 .container {
     height: auto;
-    width: 100%; /* Memastikan container menggunakan seluruh lebar */
-    display: flex; /* Menggunakan flexbox untuk tata letak */
-    justify-content: space-between; /* Memisahkan logo dan nav */
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
     align-items: center; 
     padding: 10px 10px;
 }
@@ -48,6 +48,20 @@ body {
     width: 80px;
     height: auto;
     background-color: transparent;
+}
+
+.main-header .judul {
+    display: flex;
+    align-items: center;
+    padding: 1% 1%;
+    text-align: left;
+}
+
+.main-header .judul text {
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    right: 6%;
 }
 
 .main-header .nav-menu {
@@ -95,7 +109,7 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-size: auto;
     background-position: center;
 }
@@ -194,4 +208,82 @@ footer {
     background-color: #f7f7f7;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+@media (max-width: 1080px) {
+        body {
+            font-size: 14px;
+            padding: 10px;
+        }
+    
+        /* Container */
+        .container {
+            flex-direction: column;
+            padding: 5px;
+        }
+    
+        /* Header */
+        .main-header {
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+        .main-header .logo img {
+            width: 60px;
+            height: auto;
+        }
+    
+        .main-header .judul text {
+            font-size: 24px;
+            position: relative;
+            right: 0;
+        }
+    
+        .main-header .nav-menu {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0vh;
+        }
+    
+        .main-header .nav-menu ul {
+            flex-direction: column;
+        }
+    
+        .main-header .nav-menu ul li a {
+            display: flex;
+            margin: 5px;
+            padding: 5px 20px;
+            font-size: 14px;
+
+        }
+    
+        /* Hero Section */
+        .hero-section {
+            height: 300px;
+        }
+    
+        .hero-text h1 {
+            font-size: 24px;
+        }
+    
+        /* Description Section */
+        .description {
+            padding: 20px;
+        }
+    
+        .description p {
+            font-size: 16px;
+        }
+    
+        /* Carousel */
+        .carousel img {
+            width: calc((100% - 20px) / 2);
+        }
+    
+        button.prev, button.next {
+            padding: 5px;
+            font-size: 14px;
+        }
+    
+    
 }
